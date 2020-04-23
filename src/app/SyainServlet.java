@@ -54,9 +54,10 @@ public class SyainServlet extends HttpServlet {
 		String user = "webapp";
 		String pass = "webapp";
 		// 実行するSQL文
-		String sql ="select  \n" +
-				"rownum no,SYAIN_ID, SYAIN_NAME \n" +
-				"from SK_SYAIN \n";
+		String sql ="select \n" +
+				"SYAIN_ID, SYAIN_NAME \n" +
+				"from SK_SYAIN \n" +
+				"where SYAIN_ID = '"+syainId+"' \n";
 
 
 		List<Syain> list = new ArrayList<>();
@@ -77,6 +78,7 @@ public class SyainServlet extends HttpServlet {
 
 			while(rs1.next()) {
 				Syain syain = new Syain();
+
 
 				syain.setSyainId(rs1.getString("SYAIN_ID")); // syain型の変数syainに商品コードをセット
 				syain.setSyainName(rs1.getString("SYAIN_NAME"));// syain型の変数syainに商品名をセット

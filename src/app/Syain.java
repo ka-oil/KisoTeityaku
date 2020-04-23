@@ -5,16 +5,10 @@ public class Syain {
 
 	}
 
-
-	private int syainNo;
 	private String syainId;
 	private String syainName;
-	public int getSyainNo() {
-		return syainNo;
-	}
-	public void setSyainNo(int syainNo) {
-		this.syainNo = syainNo;
-	}
+
+
 	public String getSyainId() {
 		return syainId;
 	}
@@ -27,4 +21,6 @@ public class Syain {
 	public void setSyainName(String syainName) {
 		this.syainName = syainName;
 	}
+
+
 }
