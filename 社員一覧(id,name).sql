@@ -1,0 +1,2 @@
+select SYAIN_ID, SYAIN_NAME
+from SK_SYAIN
